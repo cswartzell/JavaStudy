@@ -3,6 +3,7 @@ package com;
 public class Employee {
 	String name;
 	int eid;
+	float salary;
 	
 	public Employee() {
 		this.name = "unknown";
@@ -16,6 +17,17 @@ public class Employee {
 		this.eid = Integer.parseInt(eid);
 	}
 
+	// setter method
+	void setValue(String name, int eid, float salary) {
+		this.name = name;
+		this.eid = eid;
+		if(salary<0) {
+			this.salary = 9001;
+		} else {
+			this.salary = salary;
+		}
+		
+	}
 	
 //	public Employee(String[] args) {
 //		this.name = args[0];
