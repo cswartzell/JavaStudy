@@ -7,6 +7,19 @@ public class Employee {
 	private String name;
 	private float salary;
 	
+	
+	
+	/**
+	 * @param id
+	 * @param name
+	 * @param salary
+	 */
+	public Employee(int id, String name, float salary) {
+		super(); //Super?
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
 	public int getId() {
 		return id;
 	}

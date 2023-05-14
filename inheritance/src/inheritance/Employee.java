@@ -6,7 +6,7 @@ public class Employee {
 	private int id;
 	private String name;
 	private float salary;
-	Scanner sc = new Scanner(System.in);
+	private Scanner sc = new Scanner(System.in);
 	
 	public void readEmp() {
 //		System.out.println("Enter Eployee Details");
