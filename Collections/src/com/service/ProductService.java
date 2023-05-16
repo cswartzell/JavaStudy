@@ -27,7 +27,7 @@ public class ProductService {
 					products.add(product);
 					return product + " Added";
 				} else {
-					return "Product id must be unique";
+					return "Product id must be unique. Product not added";
 				}
 
 			}
