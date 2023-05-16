@@ -41,7 +41,7 @@ public class inheritanceTest {
 		mng1.dispEmp();
 		mng1.dispMgr();
 		dev1.dispEmp();
-		dev1.dispDev();
+//		dev1.dispDev();
 		
 		
 	}

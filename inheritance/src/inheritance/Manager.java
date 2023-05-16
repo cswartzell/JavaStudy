@@ -6,7 +6,7 @@ public class Manager extends Employee{
 	
 	public void readMgr() {
 		System.out.println("Enter number of employees under manager: ");
-		this.numberOfEmp = sc.nextInt();
+//		this.numberOfEmp = sc.nextInt();
 		addr.readAdd();
 	}
 	
