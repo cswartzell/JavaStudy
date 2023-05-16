@@ -40,6 +40,9 @@ public class InterfaceExapmle {
 		demo.dis1();
 		demo.dis2();
 		demo.dis3();
+		
+		demo.a = 4;//error. Cant change final field
+		
 	}
 
 }
