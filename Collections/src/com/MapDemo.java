@@ -22,7 +22,7 @@ public class MapDemo {
 			hm.put(8, "susan");
 		} 
 //		hm.clear(); //deletes whole map
-		hm.remove(2);
+//		hm.remove(2);
 		System.out.println(hm);
 		
 	}
