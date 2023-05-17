@@ -38,4 +38,43 @@ public class ProductService {
 	public int numProducts() {
 		return products.size();
 	}
+	
+	public Product findProduct(int pid) {
+		Iterator<Product> ii = products.iterator();
+		while (ii.hasNext()) {
+			Product p = ii.next();
+			if (p.getPid() == pid) {
+				return p;
+			}
+		}
+		return null;
+	}
+	
+	public List<Product> listProducts() {
+		return products;
+	}
+	
+	public String updateProductPrice(Product product) {
+		Iterator<Product> ii = products.iterator();
+		while (ii.hasNext()) {
+			Product p = ii.next();
+			if (p.getPid() == product.getPid()) {
+				p.setPrice(product.getPrice());
+				return "Price Updated";
+			}
+		}
+		return "Product Not Found";
+	}
+	
+	public String DeleteProductByPid(Product product) {
+		Iterator<Product> ii = products.iterator();
+		while (ii.hasNext()) {
+			Product p = ii.next();
+			if (p.getPid() == product.getPid()) {
+				ii.remove();
+				return "Prodcut Deleted";
+			}
+		}
+		return "Product Not Found";
+	}
 }
