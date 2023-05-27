@@ -12,6 +12,10 @@ public class RefDatatypes {
 		System.out.println(marks); //Prints ADDRESS. Its a ref type and cannot be accessed directly
 		System.out.println(marks[0]);
 		
+		// Stored in main STACK area
+		char c = 'J'; //Chars are single '
+		String name = "John"; // strings are "". Thats kinda neat. But I like pythons mix and match better
+	
 		
 	}
 }
