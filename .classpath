@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Collections/src"/>
+	<classpathentry kind="src" path="Compile Test"/>
+	<classpathentry kind="src" path="Compile Time Polymorphism/src"/>
+	<classpathentry kind="src" path="dataTypes/src"/>
+	<classpathentry kind="src" path="Employee/src"/>
+	<classpathentry kind="src" path="Exceptions/src"/>
+	<classpathentry kind="src" path="helloWorld/src"/>
+	<classpathentry kind="src" path="inheritance/src"/>
+	<classpathentry kind="src" path="io/src"/>
+	<classpathentry kind="src" path="JavaOOP/src"/>
+	<classpathentry kind="src" path="JDBCTest/src"/>
+	<classpathentry kind="src" path="NonAccessSpecifiers/src"/>
+	<classpathentry kind="src" path="OSL"/>
+	<classpathentry kind="src" path="Package Example/src"/>
+	<classpathentry kind="src" path="StaticExample/src"/>
+	<classpathentry kind="lib" path="JDBCTest/mysql-connector-java-8.0.28.jar"/>
+	<classpathentry kind="output" path="Collections/bin"/>
+</classpath>
