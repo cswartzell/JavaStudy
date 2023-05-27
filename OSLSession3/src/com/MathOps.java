@@ -87,9 +87,19 @@ public class MathOps {
 //		res = -1 >>> 4;
 //		System.out.println(res);
 	
-		int i = 300;
-		int j = 400;
-		int res = (i > j) ? 5 : 6;   //Ternary: evaluate left: If true, middle. Else Rightmost.
+//		int i = 300;
+//		int j = 400;
+//		int res = (i > j) ? 5 : 6;   //Ternary: evaluate left: If true, middle. Else Rightmost.
+		
+		//Unary Ops:\
+		int num1 = 1;
+		num1++;
+		System.out.println(num1);
+		System.out.println(num1++); //return THEN increment
+		System.out.println(num1);
+		System.out.println(++num1); //Increment THEN return
+		System.out.println(num1);
+		
 		
 	}
 
