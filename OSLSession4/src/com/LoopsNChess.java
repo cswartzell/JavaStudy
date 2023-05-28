@@ -54,7 +54,7 @@ public class LoopsNChess {
 		System.out.printf("\u255D"+"%n");
 		
 
-		System.out.println(" \u23B8\u23AF");
+		System.out.println("\u23B8T");
 		
 	}
 
