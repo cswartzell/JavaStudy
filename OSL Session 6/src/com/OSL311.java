@@ -17,8 +17,8 @@ public class OSL311 {
 				{5454651, 1681681, 49345984},//France
 		};
 		
-		System.out.println("Total Cases\t\tTotal Recovered\t\tActive Cases");
-		System.out.println("===============================================================");
+//		System.out.println("Total Cases\t\tTotal Recovered\t\tActive Cases");
+//		System.out.println("===============================================================");
 //		
 //		for (int i = 0 ; i < countries.length ; i++) {
 //			System.out.println(countries[i]);
@@ -35,12 +35,13 @@ public class OSL311 {
 		
 		int choice = -1;		
 		while (choice != 5) {
+			System.out.println("===========================");
 			System.out.println("Filter Covid Case Data");
 			System.out.println("1: Name");
 			System.out.println("2: Total Cases");
 			System.out.println("3: Recovered Cases");
 			System.out.println("4: Active Cases*");
-			System.out.println("5: Exit*");
+			System.out.println("5: Exit");
 			
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Enter your choice: ");
@@ -70,6 +71,42 @@ public class OSL311 {
 					System.out.println();
 					System.out.println();
 					break;
+					
+				case 2:
+					System.out.println();
+					System.out.println("Total Cases");
+					System.out.println("-----------");
+					System.out.println();
+					for (int j = 0 ; j < covidCases.length ; j++) {
+						System.out.println(countries[j]+": "+covidCases[j][0]);
+						
+					}
+					System.out.println();
+					break;
+				case 3:
+					System.out.println();
+					System.out.println("Recovered Cases");
+					System.out.println("---------------");
+					System.out.println();
+					for (int j = 0 ; j < covidCases.length ; j++) {
+						System.out.println(countries[j]+": "+covidCases[j][1]);
+						
+					}
+					System.out.println();
+					break;
+				case 4:
+					System.out.println();
+					System.out.println("Active Cases");
+					System.out.println("---------------");
+					System.out.println();
+					for (int j = 0 ; j < covidCases.length ; j++) {
+						System.out.println(countries[j]+": "+covidCases[j][2]);
+						
+					}
+					System.out.println();
+					break;
+				case 5:
+					return;
 			}
 		}
 	}
