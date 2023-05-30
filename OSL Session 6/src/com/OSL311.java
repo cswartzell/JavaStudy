@@ -3,6 +3,18 @@ package com;
 import java.util.Scanner;
 
 public class OSL311 {
+	
+	static void printCases(int[][] covidCases, String[] countries, int filter ) {
+		System.out.println("-----------");
+//		System.out.println();
+		for (int j = 0 ; j < covidCases.length ; j++) {
+			System.out.println(countries[j]+": "+covidCases[j][filter]);
+			
+		}
+		System.out.println();
+	}
+	
+	
 	public static void main(String[] args) {
 		String[] countries = {"USA", "India", "Brazil", "UK", "France"};
 		int totalCases = 0;
@@ -40,7 +52,7 @@ public class OSL311 {
 			System.out.println("1: Name");
 			System.out.println("2: Total Cases");
 			System.out.println("3: Recovered Cases");
-			System.out.println("4: Active Cases*");
+			System.out.println("4: Active Cases");
 			System.out.println("5: Exit");
 			
 			Scanner sc = new Scanner(System.in);
@@ -73,37 +85,17 @@ public class OSL311 {
 					break;
 					
 				case 2:
-					System.out.println();
-					System.out.println("Total Cases");
-					System.out.println("-----------");
-					System.out.println();
-					for (int j = 0 ; j < covidCases.length ; j++) {
-						System.out.println(countries[j]+": "+covidCases[j][0]);
-						
-					}
-					System.out.println();
+					System.out.println("\nTotal Cases");
+					OSL311.printCases(covidCases, countries, 0);
 					break;
+	
 				case 3:
-					System.out.println();
-					System.out.println("Recovered Cases");
-					System.out.println("---------------");
-					System.out.println();
-					for (int j = 0 ; j < covidCases.length ; j++) {
-						System.out.println(countries[j]+": "+covidCases[j][1]);
-						
-					}
-					System.out.println();
+					System.out.println("\nRecovered Cases");
+					OSL311.printCases(covidCases, countries, 1);
 					break;
 				case 4:
-					System.out.println();
-					System.out.println("Active Cases");
-					System.out.println("---------------");
-					System.out.println();
-					for (int j = 0 ; j < covidCases.length ; j++) {
-						System.out.println(countries[j]+": "+covidCases[j][2]);
-						
-					}
-					System.out.println();
+					System.out.println("\nActive Cases");
+					OSL311.printCases(covidCases, countries, 2);
 					break;
 				case 5:
 					return;
